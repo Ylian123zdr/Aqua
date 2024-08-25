@@ -1,76 +1,100 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="user-scalable = yes">
-        <meta name="keywords" content="Aqua, AquaOS">
-        <link rel="icon" href="images/Aquaicon.png" type="image/x-icon"/>
-        <title>AquaOS: Discord</title>
-        <style>
-            body {
-              margin: 0;
-              font-family: 'Urbanist', sans-serif;
-              background-color: #B7CCE2;
-            }
-            .header {
-                color: #04638E;
-                font-size: 85px;
-                text-align: center;
-            }
-            .content {
-                color: #04638E;
-                font-size: 25px;
-            }
-        </style>
-    </head>
-    <body>
-        <div style="padding: 10px 10px">
-            <a href="index.html">
-                <img src="images/Backbutton.png" alt="" width="60" height="60">
-            </a>
-        </div>
-        <h1 class="header">Discord</h1>
-        <div class="content">
-            <b>Join Our Discord Community</b><br/><br/>
+  <head>
+    <meta name="viewport" content="user-scalable = yes" />
+    <meta name="keywords" content="Aqua, AquaOS" />
+    <link rel="icon" href="images/Aquaicon.png" type="image/x-icon" />
+    <title>AquaOS: Discord</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Urbanist", sans-serif;
+        background: linear-gradient(to bottom, #b7cce2, #a4c3e4);
+      }
+      .header {
+        color: #04638e;
+        font-size: 85px;
+        text-align: center;
+      }
+      .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        color: #04638e;
+        font-size: 25px;
+        padding: 10px;
+      }
+      /* Center the invite image on right side */
+      .invite-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-            Welcome to the AquaOS Discord community!<br/>
-            This is where our users, developers, and fans<br/>
-            come together to share ideas, get support, and<br/>
-            stay up-to-date with the latest news. Whether<br/>
-            you’re here to discuss new features, ask<br/>
-            questions, or just hang out with like-minded tech<br/>
-            enthusiasts, you’ll find a place in our community.<br/><br/>
+      @media screen and (max-width: 1000px) {
+        /* When screen is 1000px wide or less */
+        /* Make image appear on the bottom */
+        .content {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="padding: 10px 10px">
+      <a href="index.html">
+        <img src="images/Backbutton.png" alt="" width="60" height="60" />
+      </a>
+    </div>
+    <h1 class="header">Discord</h1>
+    <div class="content">
+      <div class="text-container">
+        <h2>Join Our Discord Community</h2>
 
-            <b>Why Join?</b>
-            <ul>
-                <li>
-                    <b>Get Real-Time Updates:</b> Be the first to know<br/>
-                    about new releases, updates, and exclusive<br/>
-                    content.<br/>
-                </li>
-                <li>
-                    <b>Connect with the Team:</b> Interact directly<br/>
-                    with the developers and designers behind AquaOS.<br/>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <b>Support and Tips:</b> Need help? Our<br/>
-                    community is here to provide answers and<br/>
-                    share tips.<br/>
-                </li>
-                <li>
-                    <b>Community Events:</b> Participate in discussions,<br/>
-                    contests, and more.<br/>
-                </li>
-            </ul>
-            Ready to join the conversation? Click the link<br/>
-            below and become part of the AquaOS family <br/>
-            today!<br/>
-        </div>
-        <div style="position: absolute; top: 50%; right: 0">
-                <a href="https://discord.gg/9qXAd6FFZr">
-                    <img src="images/Discordicon.png" alt="" width="510" height="440">
-                </a>
-            </div>
-    </body>
+        <p>
+          Welcome to the AquaOS Discord community! This is where our users,
+          developers, and fans come together to share ideas, get support, and
+          stay up-to-date with the latest news. Whether you’re here to discuss
+          new features, ask questions, or just hang out with like-minded tech
+          enthusiasts, you’ll find a place in our community.
+        </p>
+
+        <h3>Why Join?</h3>
+
+        <ul>
+          <li>
+            <b>Get Real-Time Updates:</b> Be the first to know about new
+            releases, updates, and exclusive content.
+          </li>
+          <li>
+            <b>Connect with the Team:</b> Interact directly with the developers
+            and designers behind AquaOS.
+          </li>
+          <li>
+            <b>Support and Tips:</b> Need help? Our community is here to provide
+            answers and share tips.
+          </li>
+          <li>
+            <b>Community Events:</b> Participate in discussions, contests, and
+            more.
+          </li>
+        </ul>
+
+        <p>
+          Ready to join the conversation? Click the image and become part of the
+          AquaOS family today!
+        </p>
+      </div>
+
+      <div class="invite-container">
+        <a href="https://discord.gg/9qXAd6FFZr">
+          <img
+            src="images/Discordicon.png"
+            alt="Discord invite"
+            width="510"
+            height="440"
+          />
+        </a>
+      </div>
+    </div>
+  </body>
 </html>
