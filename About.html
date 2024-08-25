@@ -1,61 +1,127 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>AquaOS: About</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="user-scalable = yes">
-        <meta name="keywords" content="Aqua, AquaOS">
-        <link rel="icon" href="images/Aquaicon.png" type="image/x-icon"/>
-        <style>
-            body {
-              margin: 0;
-              font-family: 'Urbanist', sans-serif;
-              background-color: #B7CCE2;
-            }
-            .header {
-                color: #04638E;
-                font-size: 85px;
-                text-align: center;
-            }
-            .content {
-                color: #04638E;
-                font-size: 25px;
-                text-align: center;
-            }
-</style>
-    </head>
-    <body>
-        <div style="padding: 10px 10px">
-            <a href="index.html">
-                <img src="images/Backbutton.png" alt="" width="60" height="60">
-            </a>
-        </div>
-        <br/><br/><br/>
-        <h1 class="header">About</h1>
-        <div class="content">
-            Welcome to Aqua, where we’re redefining the digital experience with our cutting-edge operating<br/>
-            system, AquaOS. Our mission is simple: to empower users with a platform that’s not only powerful and<br/>
-            efficient but also intuitive and beautifully designed.<br/><br/>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <meta name="keywords" content="Aqua, AquaOS" />
+    <meta
+      name="description"
+      content="Discover AquaOS, an innovative and user-friendly operating system that redefines the digital experience."
+    />
+    <title>About AquaOS</title>
+    <link rel="icon" href="images/Aquaicon.png" type="image/x-icon" />
+    <style>
+      body {
+        position: relative;
+        margin: 0;
+        font-family: "Urbanist", sans-serif;
+        background-color: hsl(211, 43%, 80%);
+        color: #04638e;
+      }
+      header {
+        padding: 20px;
+        text-align: center;
+      }
+      .back-button-container {
+        position: absolute;
+        top: 2vh;
+        left: 2vw;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 10px;
+      }
+      .back-button {
+        width: 10vw;
+        height: 10vw;
+        max-height: 60px;
+        max-width: 60px;
+      }
 
-            <b>Our Vision</b><br/>
-            At Aqua, we believe in a future where technology seamlessly integrates into everyday life, enhancing<br/>
-            productivity and creativity without getting in the way. That’s why we’ve developed AquaOS—a system<br/>
-            that’s built to break boundaries, pushing the limits of what’s possible with modern computing.<br/><br/>
+      .header {
+        font-size: 4rem;
+      }
+      main {
+        padding: 0 20px;
+        text-align: center;
+      }
+      .content {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      @media (max-width: 600px) {
+        .header {
+          font-size: 2.5rem;
+        }
+        .content {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="back-button-container">
+      <a href="index.html">
+        <img
+          class="back-button"
+          src="images/Backbutton.png"
+          alt="Back button to home"
+          loading="lazy"
+        />
+      </a>
+    </div>
+    <header>
+      <h1 class="header">About AquaOS</h1>
+    </header>
+    <main>
+      <section class="content">
+        <p>
+          Welcome to Aqua, where we’re redefining the digital experience with
+          our cutting-edge operating system, AquaOS. Our mission is simple: to
+          empower users with a platform that’s not only powerful and efficient
+          but also intuitive and beautifully designed.
+        </p>
 
-            <b>Our Journey</b><br/>
-            Our story began with a group of passionate developers and designers who wanted to create something<br/>
-            different. Frustrated by the limitations of existing systems, we set out to build an OS that puts the user first—<br/>
-            blending performance, security, and aesthetics in a way that hasn’t been done before.<br/><br/>
+        <h2>Our Vision</h2>
+        <p>
+          At Aqua, we believe in a future where technology seamlessly integrates
+          into everyday life, enhancing productivity and creativity without
+          getting in the way. That’s why we’ve developed AquaOS—a system that’s
+          built to break boundaries, pushing the limits of what’s possible with
+          modern computing.
+        </p>
 
-            <b>Why AquaOS?</b><br/>
-            AquaOS isn’t just another operating system; it’s a statement. It’s about giving you control, unlocking your<br/>
-            potential, and making your digital life simpler, faster, and more enjoyable. With a focus on innovation and user<br/>
-            experience, AquaOS is designed to adapt to your needs, whether you’re a power user, a creative<br/>
-            professional, or someone who simply wants a reliable and beautiful system.<br/><br/>
+        <h2>Our Journey</h2>
+        <p>
+          Our story began with a group of passionate developers and designers
+          who wanted to create something different. Frustrated by the
+          limitations of existing systems, we set out to build an OS that puts
+          the user first—blending performance, security, and aesthetics in a way
+          that hasn’t been done before.
+        </p>
 
-            <b>Join Us</b><br/>
-            We’re excited about where we’re headed, and we want you to be a part of this journey. Explore AquaOS<br/>
-            today and discover how we’re changing the game.<br/><br/><br/><br/>
-        </div>
-    </body>
+        <h2>Why AquaOS?</h2>
+        <p>
+          AquaOS isn’t just another operating system; it’s a statement. It’s
+          about giving you control, unlocking your potential, and making your
+          digital life simpler, faster, and more enjoyable. With a focus on
+          innovation and user experience, AquaOS is designed to adapt to your
+          needs, whether you’re a power user, a creative professional, or
+          someone who simply wants a reliable and beautiful system.
+        </p>
+
+        <h2>Join Us</h2>
+        <p>
+          We’re excited about where we’re headed, and we want you to be a part
+          of this journey. Explore AquaOS today and discover how we’re changing
+          the game.
+        </p>
+      </section>
+    </main>
+  </body>
 </html>
